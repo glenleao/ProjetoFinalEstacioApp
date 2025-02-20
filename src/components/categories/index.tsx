@@ -15,7 +15,7 @@ export function Categories({data}: Props) {
         <FlatList
             data={data}
             keyExtractor={(item) => item.id}
-            renderItem={() => <Category tema="Bento"/>}/>
-            // renderItem={({item}) => <Category tema={item.tema}/>}/>
+            // renderItem={() => <Category tema="Bento"/>}/>
+            renderItem={({item}) => <Category tema={item.tema}/>}/>
         )
 }

@@ -13,7 +13,7 @@ export default function Home(){
 
     async function fetchCategories() {
         try {
-            const { data } = await api.get("/tema")
+            const { data } = await api.get("/")
             setCategories(data)
         } catch (error) {
            console.log(error) 
@@ -26,7 +26,7 @@ export default function Home(){
     }, [])
     return (
         <View style={{flex: 1 }}>
-            <Text>Glen6</Text>
+            <Text>Glen7</Text>
             <Categories data={categories}/>
 
             <Button onPress={() =>router.navigate("/")} >
