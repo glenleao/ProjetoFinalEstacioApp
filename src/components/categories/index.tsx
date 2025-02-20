@@ -16,6 +16,9 @@ export function Categories({data}: Props) {
             data={data}
             keyExtractor={(item) => item.id}
             // renderItem={() => <Category tema="Bento"/>}/>
-            renderItem={({item}) => <Category tema={item.tema}/>}/>
+            renderItem={({item}) => <Category tema={item.tema}/>}
+            horizontal
+            showsHorizontalScrollIndicator
+            />
         )
 }
