@@ -5,13 +5,14 @@ import {s} from "./styles"
 type Props = PressableProps & {
     iconId: string
     isSelected?: boolean
-    tema: string
+    nomePet: string
 }
 
-export function Category({ tema, iconId, isSelected = false, ...rest}: Props){
+export function Category({ nomePet, iconId, isSelected = false, ...rest}: Props){
     return(
-        <Pressable style={[s.container]}>
-            <Text style={[s.tema]}>{tema}</Text>
+        <Pressable 
+            style={[s.container, isSelected && s.containerSelected]}{...rest}>
+            <Text style={[s.nomePet, isSelected && s.nameSelected]}>{nomePet}</Text>
         </Pressable>
     )
 }
