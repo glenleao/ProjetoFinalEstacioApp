@@ -8,7 +8,7 @@ export function Steps(){
         <View style={s.container}>
             <Text style={s.title}>Veja como funciona:</Text>
             <Step
-                icon="{IconPaw}"
+                // icon="{IconPaw}"
                 title="1º Passo"
                 description="Preencha o formulario com os dados do tutor"
             />
